@@ -38,7 +38,7 @@
     },
     "productName": "Tandem",
     "build": {
-        "appId": "com.tandem.app",
+        "appId": "ru.tandemchat.app",
         "mac": {
             "target": [
                 {
