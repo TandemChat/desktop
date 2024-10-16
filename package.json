@@ -1,6 +1,6 @@
 {
     "name": "tandem-desktop",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Tandem desktop app",
     "private": true,
     "author": {
@@ -113,7 +113,8 @@
             "applicationId": "tandem.chat",
             "identityName": "54156SoGDevelopment.Tandem",
             "publisher": "CN=CE68934C-441E-49A8-BD9F-1EC40FAEA645",
-            "publisherDisplayName": "SoG Development"
+            "publisherDisplayName": "SoG Development",
+            "languages": "ru-RU"
         },
         "publish": {
             "provider": "github"
