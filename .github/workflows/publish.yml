@@ -7,6 +7,11 @@ on:
 
   workflow_dispatch:
 
+permissions:
+  contents: write  #  for release creation (svenstaro/upload-release-action)
+  id-token: write
+  attestations: write
+
 jobs:
   publish-linux:
 
@@ -18,7 +23,7 @@ jobs:
     - name: Build For Linux
       id: build-linux
       env:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         yarn build:bundle
         yarn release
@@ -35,7 +40,7 @@ jobs:
     - name: Build For Windows
       id: build-windows
       env:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         yarn build:bundle
         yarn release
@@ -49,7 +54,7 @@ jobs:
       run: yarn install
     - name: Build For macOS
       env:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         yarn build:bundle
         yarn release

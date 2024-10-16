@@ -62,7 +62,7 @@ function createWindow() {
     });
     mainWindow = new BrowserWindow({
         autoHideMenuBar: true,
-        title: "Revolt",
+        title: "Tandem",
         icon: WindowIcon,
 
         frame: initialConfig.frame,
@@ -155,7 +155,7 @@ function createWindow() {
         if (params.misspelledWord) {
             menu.append(
                 new MenuItem({
-                    label: "Add to dictionary",
+                    label: "Добавить в словарь",
                     click: () =>
                         mainWindow.webContents.session.addWordToSpellCheckerDictionary(
                             params.misspelledWord,
@@ -165,7 +165,7 @@ function createWindow() {
         }
 	menu.append(
 		new MenuItem({
-			label: "Toggle spellcheck",
+			label: "Включить проверку грамматики",
 			click: ()=>{
 				//to improve readability, stores current state of spell check
 	 			let isSpellcheck = store.get("spellcheck",true);
@@ -237,12 +237,12 @@ function createWindow() {
     function buildMenu() {
         tray.setContextMenu(
             Menu.buildFromTemplate([
-                { label: "Revolt", type: "normal", enabled: false },
+                { label: "Tandem", type: "normal", enabled: false },
                 { label: "---", type: "separator" },
                 {
                     label: mainWindow.isVisible()
-                        ? "Hide Revolt"
-                        : "Show Revolt",
+                        ? "Спрятать Tandem"
+                        : "Показать Tandem",
                     type: "normal",
                     click: function () {
                         if (mainWindow.isVisible()) {
@@ -253,7 +253,7 @@ function createWindow() {
                     },
                 },
                 {
-                    label: "Restart Revolt",
+                    label: "Перезапустить Tandem",
                     type: "normal",
                     click: function () {
                         app.shouldRelaunch = true;
@@ -261,7 +261,7 @@ function createWindow() {
                     },
                 },
                 {
-                    label: "Quit Revolt",
+                    label: "Закрыть Tandem",
                     type: "normal",
                     click: function () {
                         app.shouldQuit = true;
@@ -273,7 +273,7 @@ function createWindow() {
     }
 
     buildMenu();
-    tray.setToolTip("Revolt");
+    tray.setToolTip("Tandem");
     tray.setImage(trayIcon);
 }
 

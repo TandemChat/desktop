@@ -2578,28 +2578,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"revolt-desktop@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "revolt-desktop@workspace:."
-  dependencies:
-    "@types/auto-launch": ^5.0.2
-    "@types/discord-rpc": ^4.0.3
-    auto-launch: ^5.0.5
-    discord-rpc: "npm:@insertish/discord-rpc@*"
-    dotenv-cli: ^6.0.0
-    electron: ^22.0.0
-    electron-builder: ^23.6.0
-    electron-store: ^8.1.0
-    electron-updater: ^5.3.0
-    electron-window-state: ^5.0.3
-    node-gyp: ^9.3.0
-    prettier: ^2.8.0
-    rimraf: ^3.0.2
-    tsc-watch: ^5.0.3
-    typescript: ^4.9.3
-  languageName: unknown
-  linkType: soft
-
 "rimraf@npm:^3.0.0, rimraf@npm:^3.0.2":
   version: 3.0.2
   resolution: "rimraf@npm:3.0.2"
@@ -2898,6 +2876,28 @@ __metadata:
   checksum: 3dda818de06ebbe5b9653e07842d9479f3555ebc77e9a0280caf5a14fb877ffee9ed57007c3b78f5a6324b8dbeec648d9e97a24e2ed9fdb81ddc69ea07100f4a
   languageName: node
   linkType: hard
+
+"tandem-desktop@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "tandem-desktop@workspace:."
+  dependencies:
+    "@types/auto-launch": ^5.0.2
+    "@types/discord-rpc": ^4.0.3
+    auto-launch: ^5.0.5
+    discord-rpc: "npm:@insertish/discord-rpc@*"
+    dotenv-cli: ^6.0.0
+    electron: ^22.0.0
+    electron-builder: ^23.6.0
+    electron-store: ^8.1.0
+    electron-updater: ^5.3.0
+    electron-window-state: ^5.0.3
+    node-gyp: ^9.3.0
+    prettier: ^2.8.0
+    rimraf: ^3.0.2
+    tsc-watch: ^5.0.3
+    typescript: ^4.9.3
+  languageName: unknown
+  linkType: soft
 
 "tar@npm:^6.1.11, tar@npm:^6.1.2":
   version: 6.1.13

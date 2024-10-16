@@ -1,9 +1,9 @@
 [Desktop Entry]
-Name=Revolt
+Name=Tandem
 Comment=User-first chat platform. 
-Exec=revolt-desktop
+Exec=tandem-desktop
 Terminal=false
 Type=Application
-Icon=revolt-desktop
+Icon=tandem-desktop
 Categories=Network;InstantMessaging
-StartupWMClass=RevoltDesktop
+StartupWMClass=TandemDesktop

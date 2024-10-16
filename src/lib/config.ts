@@ -50,7 +50,7 @@ export function getBuildURL() {
 
     switch (build) {
         case "dev":
-            return "http://local.revolt.chat:3001";
+            return "http://localhost:5173";
         case "nightly":
             return "https://app.tandemchat.ru";
         default:

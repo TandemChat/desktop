@@ -11,16 +11,16 @@ export async function connectRPC() {
 
         rpc.on("ready", () =>
             rpc.setActivity({
-                state: "revolt.chat",
-                details: "Chatting with others",
+                state: "tandemchat.ru",
+                details: "Общается с в Tandem",
                 largeImageKey: "qr",
-                largeImageText: "Communication is critical – use Revolt.",
+                largeImageText: "Связь это главное – используйте Tandem.",
                 buttons: [
                     {
-                        label: "Join Revolt",
-                        url: "https://app.revolt.chat/",
+                        label: "Войти в Tandem",
+                        url: "https://app.tandemchat.ru/",
                     },
-                    { label: "Website", url: "https://revolt.chat" },
+                    { label: "Подробнее", url: "https://tandemchat.ru" },
                 ],
             }),
         );
@@ -28,7 +28,7 @@ export async function connectRPC() {
         // @ts-ignore
         rpc.on("disconnected", reconnect);
 
-        rpc.login({ clientId: "872068124005007420" });
+        rpc.login({ clientId: "1296081010064101457" });
     } catch (err) {
         reconnect();
     }
