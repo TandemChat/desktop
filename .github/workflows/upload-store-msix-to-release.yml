@@ -22,4 +22,4 @@ jobs:
       with:
         store-id: 9P812NXWRQVS
         token: ${{ secrets.GITHUB_TOKEN }}
-        asset-name-pattern: Tandem_{version}_{arch}  # Optional
+        asset-name-pattern: Tandem_{version}_{arch}_signed  # Optional
